@@ -17,8 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-b from-gray-50 to-gray-100 min-h-screen text-gray-900 overflow-x-hidden pb-24`} suppressHydrationWarning>
-        <main className="max-w-md mx-auto min-h-screen relative shadow-2xl bg-white sm:rounded-[3rem] sm:my-8 sm:border-[8px] sm:border-gray-900 sm:overflow-hidden sm:min-h-[852px]">
+      <body className={`${inter.className} min-h-screen text-gray-900 overflow-x-hidden`} suppressHydrationWarning>
+        <main className="max-w-md mx-auto min-h-screen relative bg-white/55 backdrop-blur-xl shadow-[0_45px_95px_-64px_rgba(15,23,42,0.72)] sm:rounded-[3rem] sm:my-8 sm:overflow-hidden sm:min-h-[852px] sm:border sm:border-white/70 pb-[calc(env(safe-area-inset-bottom)+5rem)]">
           {children}
           <Navigation />
         </main>
