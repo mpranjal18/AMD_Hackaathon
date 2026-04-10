@@ -22,7 +22,7 @@ WORKDIR /app
 ENV NODE_ENV production
 # Set default port to 3000, Cloud Run will override this via $PORT
 ENV PORT 3000
-ENV HOST 0.0.0.0
+ENV HOSTNAME "0.0.0.0"
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
